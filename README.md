@@ -39,3 +39,8 @@ src/
 - JavaScript (ES6)
 - [ViaCEP API](https://viacep.com.br/)
 
+## Visite o projeto funcional no Git-hub pages
+
+<a href="https://natanael-cloud.github.io/cep-Api/" target="_blank">Clique aqui para visualizar</a>
+
+
