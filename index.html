@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CEP</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
 </head>
 
 <body>
@@ -17,13 +17,34 @@
         <section>
             <div class="cep-info">
                 <p id="cep">CEP: <span>-</span></p>
+                <p id="rua">Rua: <span>-</span></p>
+                <p id="bairro">Bairro: <span>-</span></p>
                 <p id="localidade">Localidade: <span>-</span></p>
+                <p id="uf">Estado (UF): <span>-</span></p>
             </div>
-            <button id="consultar">Consultar Novo CEP</button>
+
+            <label for="inputCep">Digite o CEP:</label>
+            <input type="text" id="inputCep" placeholder="Ex: 01001000" maxlength="8">
+            <button id="consultar">Consultar CEP</button>
+
+            <!-- Mensagem de carregamento -->
+            <p id="loading" style="display:none;">Carregando...</p>
+
+            <!-- Lista de resultados -->
+            <div id="resultados" style="display:none;">
+                <ul>
+                    <li><strong>CEP:</strong> <span id="resultCep"></span></li>
+                    <li><strong>Rua:</strong> <span id="resultRua"></span></li>
+                    <li><strong>Bairro:</strong> <span id="resultBairro"></span></li>
+                    <li><strong>Localidade:</strong> <span id="resultLocalidade"></span></li>
+                    <li><strong>Estado (UF):</strong> <span id="resultUf"></span></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <script src="src/assets/js/main.js"></script>
 </body>
 
 </html>
+
